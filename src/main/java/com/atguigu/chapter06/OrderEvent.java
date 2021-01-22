@@ -12,4 +12,14 @@ public class OrderEvent {
     private String eventType;
     private String txId;
     private Long eventTime;
+
+    @Override
+    public String toString() {
+        return "OrderEvent{" +
+                "orderId=" + orderId +
+                ", eventType='" + eventType + '\'' +
+                ", txId='" + txId + '\'' +
+                ", eventTime=" + eventTime +
+                '}';
+    }
 }
